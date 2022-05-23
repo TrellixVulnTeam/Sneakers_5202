@@ -50,17 +50,16 @@ ul {
 }
 @media(max-width: 645px){
  
-    .nav_Sneaker{ background-color:$White; height: 5vh; }
-    
+    .nav_Sneaker{background-color:$White; height: 5vh; }
     .nav_Sneaker
-    .nav_hamburguesa{ display: flex; justify-content: center; align-items: center; }
-    #menu_hamburguesa{width: 100%; height: 3vh; }
-    #logo_hamburguesa{display: none;}
+    .nav_hamburguesa{padding: 10px; display: flex; justify-content: center; align-items: center; margin-right:auto; }
+    #menu_hamburguesa{margin-right: auto; width: 12%; height: 3vh; }
+    #logo_hamburguesa{width: 50%; margin-right: auto;}
     .nav_Sneaker
     .ul_Sneaker .logo{display: none;}
-        .ul_Sneaker{flex-direction: column; position: fixed; top:40px; right: 100%; transition:all 0.8s ease; background-color: $White; width: 100%; height: 100vh;  font-size: 18px;}
+        .ul_Sneaker{flex-direction: column; position: fixed; top:60px; right: 100%; transition:all 0.8s ease; background-color: $White; width: 100%; height: 100vh;  font-size: 18px;}
         .ul_Sneaker_re{ flex-direction: column;  right: 40%; line-height: 60px;}
-    .header_Sneaker{
+        .header_Sneaker{
         flex-direction: column;
         .header_article .img1{ width: 100vw; margin-top: 25px; border-radius: 0%;}
         .header_article_mini{display: none;}

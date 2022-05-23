@@ -32,21 +32,25 @@ ul {
     height: 5vh; }
   .nav_Sneaker
 .nav_hamburguesa {
+    padding: 10px;
     display: flex;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    margin-right: auto; }
   #menu_hamburguesa {
-    width: 100%;
+    margin-right: auto;
+    width: 12%;
     height: 3vh; }
   #logo_hamburguesa {
-    display: none; }
+    width: 50%;
+    margin-right: auto; }
   .nav_Sneaker
 .ul_Sneaker .logo {
     display: none; }
   .ul_Sneaker {
     flex-direction: column;
     position: fixed;
-    top: 40px;
+    top: 60px;
     right: 100%;
     transition: all 0.8s ease;
     background-color: white;

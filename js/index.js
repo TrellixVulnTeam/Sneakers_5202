@@ -53,7 +53,7 @@ function DLT (e){
     padr.removeChild(pad);
 }
 //menu responsive
-function menuResponsive(e){
+function menuResponsive(){
    const ol = document.querySelector(`.ul_Sneaker`);
     ol.classList.toggle(`ul_Sneaker_re`);
     
