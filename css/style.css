@@ -1,0 +1,341 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-user-select: none; }
+
+ul {
+  list-style: none;
+  text-decoration: none; }
+
+@media (max-width: 1000px) {
+  .header_Sneaker
+.header_article
+.img1 {
+    height: 53vh; }
+  .header_article_mini article img {
+    height: 11vh;
+    margin: 7px; } }
+
+@media (max-width: 915px) {
+  .header_article_txt
+.cash_Sneaker .add {
+    margin-left: 30px;
+    width: 40%; }
+  .header_article_txt
+.cash_Sneaker .cantidad {
+    width: 40%; } }
+
+@media (max-width: 645px) {
+  .nav_Sneaker {
+    background-color: white;
+    height: 5vh; }
+  .nav_Sneaker
+.nav_hamburguesa {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  #menu_hamburguesa {
+    width: 100%;
+    height: 3vh; }
+  #logo_hamburguesa {
+    display: none; }
+  .nav_Sneaker
+.ul_Sneaker .logo {
+    display: none; }
+  .ul_Sneaker {
+    flex-direction: column;
+    position: fixed;
+    top: 40px;
+    right: 100%;
+    transition: all 0.8s ease;
+    background-color: white;
+    width: 100%;
+    height: 100vh;
+    font-size: 18px; }
+  .ul_Sneaker_re {
+    flex-direction: column;
+    right: 40%;
+    line-height: 60px; }
+  .header_Sneaker {
+    flex-direction: column; }
+    .header_Sneaker .header_article .img1 {
+      width: 100vw;
+      margin-top: 25px;
+      border-radius: 0%; }
+    .header_Sneaker .header_article_mini {
+      display: none; }
+    .header_Sneaker .header_article_txt {
+      padding: 25px; }
+    .header_Sneaker .cash_Sneaker {
+      flex-direction: column; }
+    .header_Sneaker .cash_Sneaker .cantidad {
+      margin: auto;
+      width: 100%;
+      height: 8vh; }
+    .header_Sneaker .cash_Sneaker .add {
+      margin: 15px auto;
+      width: 100%; }
+    .header_Sneaker .dos {
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+    .header_Sneaker .dos .pa {
+      font-size: 15px;
+      margin: auto; }
+  #article_Sneaker
+#cart {
+    width: auto;
+    height: auto; } }
+
+.nav_hamburguesa {
+  display: none; }
+
+.Container_Sneaker {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+/*nav*/
+.nav_Sneaker {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px; }
+
+.nav_Sneaker img {
+  height: 3vh;
+  width: 30%; }
+
+.ul_Sneaker {
+  display: flex;
+  align-items: center;
+  justify-content: space-around; }
+
+.ul_Sneaker_re {
+  display: flex;
+  align-items: center;
+  justify-content: space-around; }
+
+.ul_Sneaker li {
+  margin-left: 30px;
+  cursor: pointer; }
+
+.ul_Sneaker li:hover {
+  color: #000;
+  padding-bottom: 4px;
+  border-bottom: 2px solid #ff7d1a; }
+
+.article_Sneaker .carshop {
+  height: 3vh;
+  width: 20%;
+  cursor: pointer;
+  margin-right: 20px; }
+
+.article_Sneaker .avatar {
+  height: 4vh;
+  width: 40%; }
+
+.article_Sneaker .avatar:hover {
+  border-radius: 100%;
+  cursor: pointer;
+  border: 1px solid #ff7d1a; }
+
+/*Header*/
+.header_Sneaker {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.header_article {
+  width: 100%;
+  text-align: center; }
+
+.header_article .img1 {
+  margin-top: 50px;
+  cursor: pointer;
+  height: 60vh;
+  border-radius: 10px; }
+
+.header_article_mini img {
+  height: 13vh;
+  margin: 5px;
+  border-radius: 10px; }
+
+.header_article_mini img:hover {
+  cursor: pointer;
+  border: 2px solid #ff7d1a; }
+
+.header_article_txt {
+  width: 100%; }
+
+.header_article_txt h3 {
+  color: #ff7d1a;
+  font-size: 16px; }
+
+.header_article_txt h2 {
+  margin-top: 10px;
+  font-size: 30px; }
+
+.header_article_txt p {
+  margin-top: 22px;
+  color: #68707d;
+  font-size: 16px; }
+
+.header_article_txt
+.precio {
+  color: #000; }
+
+.header_article_txt
+.precio span {
+  color: #ff7d1a;
+  font-size: 10px;
+  margin-left: 10px; }
+
+.header_article_txt .pa {
+  font-size: 10px; }
+
+.cash_Sneaker {
+  display: flex;
+  margin-top: 15px; }
+
+.cash_Sneaker
+button {
+  cursor: pointer;
+  margin-left: 10px;
+  font-size: 15px;
+  width: 30%;
+  background-color: #ff7d1a;
+  border: none;
+  border-radius: 10px;
+  height: 7vh;
+  text-align: center;
+  color: #fff; }
+
+.cash_Sneaker
+button img {
+  height: 2vh;
+  margin-right: 5px; }
+
+.cash_Sneaker .cantidad .menos {
+  cursor: pointer;
+  margin-right: 25px;
+  color: #ff7d1a;
+  font-size: 25px; }
+
+.cash_Sneaker .cantidad .mas {
+  cursor: pointer;
+  margin-left: 25px;
+  font-size: 25px;
+  color: #ff7d1a; }
+
+.cash_Sneaker .cantidad {
+  text-align: center;
+  width: 20%;
+  background-color: #ffede0;
+  padding: 5px;
+  border-radius: 10px; }
+
+.view {
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(124, 124, 124, 0.603);
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.view
+.articulo p {
+  display: flex;
+  font-size: 20px;
+  color: #000;
+  cursor: pointer;
+  justify-content: flex-end; }
+
+.articulo .principallogo {
+  height: 60vh; }
+
+.view
+article img {
+  height: 10vh;
+  margin-top: 10px;
+  border-radius: 10px;
+  margin-left: 35px; }
+
+.view
+article img:hover {
+  background-color: white;
+  border: 2px solid #ff7d1a; }
+
+#cart {
+  position: absolute;
+  margin: 0 auto;
+  z-index: 999999999;
+  width: auto;
+  height: auto;
+  box-shadow: 5px 5px 10px #a3a3a3;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: white; }
+
+#cart .h4_h4 {
+  text-align: center;
+  margin: 35px auto;
+  color: #b6bcc8; }
+
+#cart
+div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+#cart
+.carshop {
+  font-size: 15px; }
+
+.addimg {
+  display: flex;
+  flex-direction: column; }
+
+.addimg .buy {
+  display: flex;
+  align-items: center;
+  margin: auto 25px; }
+
+.addimg .buy .imgg {
+  height: 7vh;
+  border-radius: 10%;
+  width: 30%; }
+
+.addimg .buy .txt {
+  margin-left: 10px; }
+
+.addimg .buy .title {
+  margin-left: 10px;
+  font-size: 15px;
+  color: #68707d; }
+
+.addimg .title span {
+  color: #000; }
+
+.delete img {
+  height: 3vh;
+  width: 80%;
+  cursor: pointer; }
+
+.addimg button {
+  margin-left: 15px;
+  border: none;
+  border-radius: 10px;
+  background-color: #ff7d1a;
+  color: #fff;
+  width: 100%;
+  height: 4vh;
+  cursor: pointer; }
+
+.addimg button:hover {
+  color: #000; }
