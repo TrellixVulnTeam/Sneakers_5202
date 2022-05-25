@@ -18,6 +18,13 @@ function inicio(){
     document.querySelector(`#menu_hamburguesa`).onclick=menuResponsive;
     document.querySelector(`.ul_Sneaker`).onclick=removerMenu;   
     document.getElementById(`add_product`).onclick=add;
+    document.querySelector(`.fa-solid`).onclick=oscuro;
+
+}   
+
+
+const oscuro = ()=>{
+    body.classList.toggle(`Dark`);
 }
 
 //add

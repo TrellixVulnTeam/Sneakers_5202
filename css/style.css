@@ -8,6 +8,12 @@ ul {
   list-style: none;
   text-decoration: none; }
 
+.Dark {
+  background-color: #333333; }
+
+body {
+  background-color: #fff; }
+
 @media (max-width: 1000px) {
   .header_Sneaker
 .header_article
@@ -28,7 +34,6 @@ ul {
 
 @media (max-width: 645px) {
   .nav_Sneaker {
-    background-color: white;
     height: 5vh; }
   .nav_Sneaker
 .nav_hamburguesa {
@@ -38,6 +43,7 @@ ul {
     align-items: center;
     margin-right: auto; }
   #menu_hamburguesa {
+    cursor: pointer;
     margin-right: auto;
     width: 12%;
     height: 3vh; }
@@ -49,9 +55,10 @@ ul {
 .ul_Sneaker .logo {
     display: none; }
   .ul_Sneaker {
+    box-shadow: 5px 5px 10px rgba(3, 3, 3, 0.473);
     flex-direction: column;
     position: fixed;
-    top: 60px;
+    top: 0px;
     right: 100%;
     transition: all 0.8s ease;
     background-color: white;
@@ -108,7 +115,7 @@ ul {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  padding: 20px; }
+  padding: 10px; }
 
 .nav_Sneaker img {
   height: 3vh;
@@ -147,6 +154,11 @@ ul {
   border-radius: 100%;
   cursor: pointer;
   border: 1px solid #ff7d1a; }
+
+.ul_Sneaker .fa-solid {
+  font-size: 15px;
+  margin-left: 50px;
+  cursor: pointer; }
 
 /*Header*/
 .header_Sneaker {
