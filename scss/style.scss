@@ -54,7 +54,7 @@ ul {
     .nav_Sneaker
     .nav_hamburguesa{padding: 10px; display: flex; justify-content: center; align-items: center; margin-right:auto; }
     #menu_hamburguesa{margin-right: auto; width: 12%; height: 3vh; }
-    #logo_hamburguesa{width: 50%; margin-right: auto;}
+    #logo_hamburguesa{width: 50%; height: 3vh; margin-right: auto;}
     .nav_Sneaker
     .ul_Sneaker .logo{display: none;}
         .ul_Sneaker{flex-direction: column; position: fixed; top:60px; right: 100%; transition:all 0.8s ease; background-color: $White; width: 100%; height: 100vh;  font-size: 18px;}
@@ -69,6 +69,7 @@ ul {
         .cash_Sneaker .add{ margin:15px auto; width: 100%;}
         .dos{display: flex; justify-content: space-between; align-items: center;}
         .dos .pa{font-size: 15px; margin:auto}
+        .nav_Sneaker .article_Sneaker .avatar{display: none;}
     }
 
     #article_Sneaker
@@ -100,7 +101,7 @@ ul {
 .ul_Sneaker li{margin-left: 30px; cursor: pointer;}
 .ul_Sneaker li:hover{color: #000;  padding-bottom: 4px; border-bottom:2px solid $Orange;}
 .article_Sneaker .carshop{height:3vh; width: 20%; cursor: pointer; margin-right: 20px;}
-.article_Sneaker .avatar{ height:4vh; width: 40%;}
+.article_Sneaker .avatar{ height:5vh; width: 40%;}
 .article_Sneaker .avatar:hover{border-radius: 100%; cursor: pointer; border:1px solid $Orange;}
 
 /*Header*/

@@ -22,35 +22,53 @@ function inicio(){
 
 //add
 const add =()=>{
+      
+    let productoLocal = {
+        img: `images/image-product-4-thumbnail.jpg`,
+        delete: `images/icon-delete.svg`,
+        Title:`Fall Limite Sneakers`,
+        Precio: precio,
+        Cantidad: suma,
+        Total: costo*suma
+    }
+
+        
+    //localStorage.setItem(`add`,JSON.stringify(cars));
+        // cars = JSON.parse(localStorage.getItem (`add`));
+        // console.log(add);
+         
     if(suma === 0){
         alert(`Por favor selecciona un Producto.`);
     }else{
-        document.querySelector(`#cart`).insertAdjacentHTML(`beforeend`,`<br> <div class="addimg">
+        let cars =  document.querySelector(`#cart`).insertAdjacentHTML(`beforeend`,`<br> <div class="addimg">
         <article class="buy">
-        <img src="images/image-product-2-thumbnail.jpg" class="imgg">
+        <img src=${productoLocal.img} class="imgg">
         <article class="txt">
-        <h4 class="title"> Fall Limite Sneakers</h4>
-        <h4>${precio}.00x${suma}<span> ${costo*suma}.00</span></h4>
+        <h4 class="title"> ${productoLocal.Title}</h4>
+        <h4>${productoLocal.Precio}.00x ${productoLocal.Cantidad} <span>${productoLocal.Total}.00</span></h4>
         </article>
         <article class="delete">
-        <img src="images/icon-delete.svg" class="Del">
+        <img src=${productoLocal.delete} class="Del">
         </article>
         </article>
         <button class="btn">Checkout</button>
          </div>`);
+         
          document.querySelector(`.delete`).onclick=DLT;
          document.querySelector(`.btn`).onclick=CPR;
     }
+    localStorage.setItem(`add`, JSON.stringify(productoLocal));
 }
 
 //buy exitosa
 const CPR=()=>alert(`Compra realizada correctamente`);
 
-//delete items error
-function DLT (e){
+//delete items error solo borra el primer elemento
+function DLT (){
     let pad = document.querySelector(`.addimg`);
     let padr = pad.parentNode;
-    padr.removeChild(pad);
+    //padr.style.display=`none`;
+    padr.removeChild(pad)
 }
 //menu responsive
 function menuResponsive(){
@@ -84,33 +102,33 @@ function mas(){
 
 // solucionar modal tiene error
 const View = () => {
-    let imgList = [
-        {img: "image-product-1-thumbnail"},
-        {img:"image-product-2-thumbnail"},
-        {img: "image-product-3-thumbnail"},
-        {img: "mage-product-4-thumbnail"}
-]
-        document.getElementById(`Container_Sneaker`).innerHTML +=`
+    let imgList = {
+         img0: "images/image-product-1-thumbnail",
+         img1:"images/image-product-2-thumbnail",
+         img2: "images/image-product-3-thumbnail",
+         img3: "images/image-product-4-thumbnail"
+        }
+        document.getElementById(`Container_Sneaker`).insertAdjacentHTML(`beforeend`,`
         <div class="view">
         <article class="arti" id="arti">
         <article class="articulo">
              <p id="Close" >X</p>
              <div>
-             <img src="images/image-product-1.jpg" class="principallogo">
+             <img src=${imgList.img0}.jpg class="principallogo">
              </div>
             </article>
-            <img src="images/image-product-1-thumbnail.jpg" id="sneaker1">
-            <img src="images/image-product-2-thumbnail.jpg" id="sneaker2">
-            <img src="images/image-product-3-thumbnail.jpg" id="sneaker3">
-            <img src="images/image-product-4-thumbnail.jpg" id="sneaker4">
+            <img src=${imgList.img0}.jpg id="sneaker1">
+            <img src=${imgList.img1}.jpg id="sneaker2">
+            <img src=${imgList.img2}.jpg id="sneaker3">
+            <img src=${imgList.img3}.jpg id="sneaker4">
         </article>
-        </div>`
+        </div>`)
     document.getElementById(`Close`).onclick=Close;
    
 } 
 
 // cerrar modal
-const Close = () =>{
+function Close (){
     let arti = document.getElementById(`arti`);
     let padre = document.querySelector(`.view`);
     arti.style.display=`none`;
@@ -119,8 +137,8 @@ const Close = () =>{
      let parent = padre.parentNode;
      parent.removeChild(padre);
  },100)
-        
 } 
+
 //carrito
 const carshop =()=>{
     let Cart =document.getElementById(`article_Sneaker`);
@@ -130,14 +148,17 @@ const carshop =()=>{
     <hr>
     </div>`) 
     document.getElementById(`carshop`).onclick=disguise;
+
+    return carshop;
 }
+
 
 //remover carrito
    const disguise =()=>{
         let child = document.getElementById(`cart`);
-        if(child.style.display == `none`){
-            child.style.display=`block`;
-        }else{
+        if(child.style.display == `block`){
             child.style.display=`none`;
+        }else{
+            child.style.display=`block`;
         } 
     }

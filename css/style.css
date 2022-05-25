@@ -43,6 +43,7 @@ ul {
     height: 3vh; }
   #logo_hamburguesa {
     width: 50%;
+    height: 3vh;
     margin-right: auto; }
   .nav_Sneaker
 .ul_Sneaker .logo {
@@ -87,6 +88,8 @@ ul {
     .header_Sneaker .dos .pa {
       font-size: 15px;
       margin: auto; }
+    .header_Sneaker .nav_Sneaker .article_Sneaker .avatar {
+      display: none; }
   #article_Sneaker
 #cart {
     width: auto;
@@ -137,7 +140,7 @@ ul {
   margin-right: 20px; }
 
 .article_Sneaker .avatar {
-  height: 4vh;
+  height: 5vh;
   width: 40%; }
 
 .article_Sneaker .avatar:hover {
