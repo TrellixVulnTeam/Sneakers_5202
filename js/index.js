@@ -109,30 +109,63 @@ function mas(){
 
 // solucionar modal tiene error
 const View = () => {
-    let imgList = {
-         img0: "images/image-product-1-thumbnail",
-         img1:"images/image-product-2-thumbnail",
-         img2: "images/image-product-3-thumbnail",
-         img3: "images/image-product-4-thumbnail"
-        }
+    let imgList = 
+         ["images/image-product-1-thumbnail.jpg",
+         "images/image-product-2-thumbnail.jpg",
+         "images/image-product-3-thumbnail.jpg",
+         "images/image-product-4-thumbnail.jpg"
+]
+    
+
         document.getElementById(`Container_Sneaker`).insertAdjacentHTML(`beforeend`,`
         <div class="view">
         <article class="arti" id="arti">
         <article class="articulo">
-             <p id="Close" >X</p>
-             <div>
-             <img src=${imgList.img0}.jpg class="principallogo">
+             <p id="Close" ><img src=images/icon-close.svg class="close"></p>
+             <div class="flex">
+             <img src=images/icon-previous.svg class="avanzar atras">
+             <img src=${imgList[0]} class="principallogo img">
+             <img src=images/icon-next.svg class="avanzar adelante" >
              </div>
             </article>
-            <img src=${imgList.img0}.jpg id="sneaker1">
-            <img src=${imgList.img1}.jpg id="sneaker2">
-            <img src=${imgList.img2}.jpg id="sneaker3">
-            <img src=${imgList.img3}.jpg id="sneaker4">
+            <img src=${imgList[0]} class="sneaker0 img">
+            <img src=${imgList[1]} class="sneaker0 img">
+            <img src=${imgList[2]} class="sneaker0 img">
+            <img src=${imgList[3]} class="sneaker0 img">
         </article>
         </div>`)
     document.getElementById(`Close`).onclick=Close;
-   
-} 
+    document.querySelector(`.adelante`).onclick = adelante;
+    document.querySelector(`.atras`).onclick = atras;
+    let img = document.querySelector(`.img`);
+
+// carrusel de img
+    function adelante(e) {
+        let adelante = document.querySelector(`.adelante`);
+        if (adelante == e.target){
+            if(total < imgList.length-1){
+                img.src = imgList[total + 1]
+                total++;
+            }else{
+                img.src = imgList[0];
+                total = 0;
+            }
+        }
+    }
+    }
+    
+    function atras(e) {
+        let atras = document.querySelector(`.atras`);
+        if (atras == e.target){
+            if(total > 0){
+                img.src = imgList[total - 1]
+                total--;
+            }else{
+                img.src = imgList[imgList.length-1];
+                total = imgList.length - 1;
+            }
+        }
+    }
 
 // cerrar modal
 function Close (){

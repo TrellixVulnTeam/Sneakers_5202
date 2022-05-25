@@ -201,12 +201,10 @@ body {
   color: #68707d;
   font-size: 16px; }
 
-.header_article_txt
-.precio {
+.header_article_txt .precio {
   color: #000; }
 
-.header_article_txt
-.precio span {
+.header_article_txt .precio span {
   color: #ff7d1a;
   font-size: 10px;
   margin-left: 10px; }
@@ -218,8 +216,7 @@ body {
   display: flex;
   margin-top: 15px; }
 
-.cash_Sneaker
-button {
+.cash_Sneaker button {
   cursor: pointer;
   margin-left: 10px;
   font-size: 15px;
@@ -231,8 +228,7 @@ button {
   text-align: center;
   color: #fff; }
 
-.cash_Sneaker
-button img {
+.cash_Sneaker button img {
   height: 2vh;
   margin-right: 5px; }
 
@@ -267,8 +263,7 @@ button img {
   align-items: center;
   justify-content: center; }
 
-.view
-.articulo p {
+.view .articulo p {
   display: flex;
   font-size: 20px;
   color: #000;
@@ -276,19 +271,28 @@ button img {
   justify-content: flex-end; }
 
 .articulo .principallogo {
-  height: 60vh; }
+  height: 60vh;
+  border-radius: 15px; }
 
-.view
-article img {
+.view article .sneaker0 {
   height: 10vh;
   margin-top: 10px;
   border-radius: 10px;
   margin-left: 35px; }
 
-.view
-article img:hover {
+.view article img:hover {
   background-color: white;
   border: 2px solid #ff7d1a; }
+
+.view .flex {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.view .arti .articulo .avanzar {
+  height: 3vh;
+  margin: 10px;
+  cursor: pointer; }
 
 #cart {
   position: absolute;
@@ -306,14 +310,12 @@ article img:hover {
   margin: 35px auto;
   color: #b6bcc8; }
 
-#cart
-div {
+#cart div {
   display: flex;
   justify-content: space-between;
   align-items: center; }
 
-#cart
-.carshop {
+#cart .carshop {
   font-size: 15px; }
 
 .addimg {
