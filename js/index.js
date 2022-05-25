@@ -110,10 +110,10 @@ function mas(){
 // solucionar modal tiene error
 const View = () => {
     let imgList = 
-         ["images/image-product-1-thumbnail.jpg",
-         "images/image-product-2-thumbnail.jpg",
-         "images/image-product-3-thumbnail.jpg",
-         "images/image-product-4-thumbnail.jpg"
+         ["images/image-product-1.jpg",
+         "images/image-product-2.jpg",
+         "images/image-product-3.jpg",
+         "images/image-product-4.jpg"
 ]
     
 
@@ -123,25 +123,16 @@ const View = () => {
         <article class="articulo">
              <p id="Close" ><img src=images/icon-close.svg class="close"></p>
              <div class="flex">
-             <img src=images/icon-previous.svg class="avanzar atras">
              <img src=${imgList[0]} class="principallogo img">
-             <img src=images/icon-next.svg class="avanzar adelante" >
              </div>
-            </article>
-            <img src=${imgList[0]} class="sneaker0 img">
-            <img src=${imgList[1]} class="sneaker0 img">
-            <img src=${imgList[2]} class="sneaker0 img">
-            <img src=${imgList[3]} class="sneaker0 img">
-        </article>
         </div>`)
     document.getElementById(`Close`).onclick=Close;
-    document.querySelector(`.adelante`).onclick = adelante;
-    document.querySelector(`.atras`).onclick = atras;
-    let img = document.querySelector(`.img`);
+     let img = document.querySelector(`.img`);
+     document.querySelector(`.img`).onclick=adelante;
 
 // carrusel de img
     function adelante(e) {
-        let adelante = document.querySelector(`.adelante`);
+        let adelante = document.querySelector(`.img`);
         if (adelante == e.target){
             if(total < imgList.length-1){
                 img.src = imgList[total + 1]
@@ -152,21 +143,7 @@ const View = () => {
             }
         }
     }
-    }
-    
-    function atras(e) {
-        let atras = document.querySelector(`.atras`);
-        if (atras == e.target){
-            if(total > 0){
-                img.src = imgList[total - 1]
-                total--;
-            }else{
-                img.src = imgList[imgList.length-1];
-                total = imgList.length - 1;
-            }
-        }
-    }
-
+}
 // cerrar modal
 function Close (){
     let arti = document.getElementById(`arti`);

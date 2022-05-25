@@ -265,33 +265,17 @@ body {
 
 .view .articulo p {
   display: flex;
-  font-size: 20px;
-  color: #000;
-  cursor: pointer;
   justify-content: flex-end; }
+
+.view .articulo p img {
+  height: 3vh;
+  margin-bottom: 5px;
+  cursor: pointer; }
 
 .articulo .principallogo {
   height: 60vh;
-  border-radius: 15px; }
-
-.view article .sneaker0 {
-  height: 10vh;
-  margin-top: 10px;
-  border-radius: 10px;
-  margin-left: 35px; }
-
-.view article img:hover {
-  background-color: white;
-  border: 2px solid #ff7d1a; }
-
-.view .flex {
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-
-.view .arti .articulo .avanzar {
-  height: 3vh;
-  margin: 10px;
+  border-radius: 15px;
+  background-size: cover;
   cursor: pointer; }
 
 #cart {
