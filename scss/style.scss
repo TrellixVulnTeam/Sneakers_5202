@@ -108,7 +108,7 @@ body{
 .ul_Sneaker_re{  @include flex;}
 .ul_Sneaker li{margin-left: 30px; cursor: pointer;}
 .ul_Sneaker li:hover{color: #000;  padding-bottom: 4px; border-bottom:2px solid $Orange;}
-.article_Sneaker .carshop{height:3vh; width: 20%; cursor: pointer; margin-right: 20px;}
+.article_Sneaker .carshop{height:3vh; width: 40%; cursor: pointer; margin-right: 20px;}
 .article_Sneaker .avatar{ height:5vh; width: 40%;}
 .article_Sneaker .avatar:hover{border-radius: 100%; cursor: pointer; border:1px solid $Orange;}
 .ul_Sneaker .fa-solid{font-size: 15px; margin-left: 50px; cursor: pointer;}
